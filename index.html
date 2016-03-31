@@ -21,6 +21,8 @@
       socket.on('event message', function(msg){
         $('#messages').append($('<section class="colored-block">').css('background-color',msg.color).text("Message sended by " + msg.color));
       });
+      
+      window.scrollTo(0,document.body.scrollHeight);
     </script>
   </body>
 </html>
